@@ -7,12 +7,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src",
-    "typecheck": "vue-tsc -p ./tsconfig.app.json"
+    "typecheck": "vue-tsc -p ./tsconfig.app.json",
+    "tauri": "tauri"
   },
   "dependencies": {
     "@internationalized/date": "^3.11.0",
     "@nuxt/ui": "^4.4.0",
     "@tanstack/table-core": "^8.21.3",
+    "@tauri-apps/api": "^2.10.1",
     "@unovis/ts": "^1.6.4",
     "@unovis/vue": "^1.6.4",
     "@vueuse/core": "^14.2.1",
@@ -24,6 +26,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2.10.1",
     "@vitejs/plugin-vue": "^6.0.4",
     "eslint": "^10.0.0",
     "eslint-plugin-vue": "^10.8.0",
