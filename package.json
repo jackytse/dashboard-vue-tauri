@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src",
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "lint": "vp lint src",
     "typecheck": "vue-tsc -p ./tsconfig.app.json",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@internationalized/date": "^3.12.0",
@@ -29,13 +30,13 @@
   "devDependencies": {
     "@tauri-apps/cli": "^2.10.1",
     "@vitejs/plugin-vue": "^6.0.5",
-    "eslint": "^10.0.3",
     "eslint-plugin-vue": "^10.8.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.0",
-    "vite": "^7.3.1",
+    "vite": "catalog:",
     "vite-plugin-vue-layouts": "^0.11.0",
+    "vite-plus": "catalog:",
     "vue-tsc": "^3.2.5"
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@10.33.0"
 }
